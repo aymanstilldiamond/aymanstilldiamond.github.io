@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
   schedule:
-    # Every 30 minutes. GitHub may run scheduled jobs a little late.
-    - cron: '*/30 * * * *'
+    # Twice an hour, at off-peak minutes: GitHub often drops jobs set for :00/:30.
+    - cron: '13,43 * * * *'
   workflow_dispatch:
 
 permissions:
