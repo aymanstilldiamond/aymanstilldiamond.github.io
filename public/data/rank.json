@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-24T02:12:44.517Z",
+  "fetchedAt": "2026-11-24T06:08:28.925Z",
   "ddragonVersion": "16.23.1",
   "players": {
     "ayman": {
@@ -10,12 +10,22 @@
       "solo": {
         "tier": "EMERALD",
         "rank": "I",
-        "lp": 46,
+        "lp": 25,
         "wins": 287,
-        "losses": 268,
+        "losses": 269,
         "hotStreak": false
       },
       "recent": [
+        {
+          "id": "NA1_5685514901",
+          "endedAt": 1795488600661,
+          "durationSec": 2569,
+          "champion": "Graves",
+          "win": false,
+          "kills": 2,
+          "deaths": 6,
+          "assists": 12
+        },
         {
           "id": "NA1_5685481668",
           "endedAt": 1795485704944,
@@ -55,16 +65,6 @@
           "kills": 5,
           "deaths": 6,
           "assists": 16
-        },
-        {
-          "id": "NA1_5683993757",
-          "endedAt": 1795283177664,
-          "durationSec": 1977,
-          "champion": "Graves",
-          "win": false,
-          "kills": 8,
-          "deaths": 3,
-          "assists": 2
         }
       ]
     },
