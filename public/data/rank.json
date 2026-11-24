@@ -1,0 +1,87 @@
+{
+  "fetchedAt": "2026-11-24T02:12:44.517Z",
+  "ddragonVersion": "16.23.1",
+  "players": {
+    "ayman": {
+      "gameName": "Feymanxop",
+      "tagLine": "NA2",
+      "level": 319,
+      "profileIconId": 6792,
+      "solo": {
+        "tier": "EMERALD",
+        "rank": "I",
+        "lp": 46,
+        "wins": 287,
+        "losses": 268,
+        "hotStreak": false
+      },
+      "recent": [
+        {
+          "id": "NA1_5685481668",
+          "endedAt": 1795485704944,
+          "durationSec": 1384,
+          "champion": "Shyvana",
+          "win": false,
+          "kills": 3,
+          "deaths": 4,
+          "assists": 1
+        },
+        {
+          "id": "NA1_5685357135",
+          "endedAt": 1795470907918,
+          "durationSec": 1720,
+          "champion": "Graves",
+          "win": true,
+          "kills": 3,
+          "deaths": 4,
+          "assists": 9
+        },
+        {
+          "id": "NA1_5684101007",
+          "endedAt": 1795299923150,
+          "durationSec": 3211,
+          "champion": "Graves",
+          "win": false,
+          "kills": 14,
+          "deaths": 6,
+          "assists": 23
+        },
+        {
+          "id": "NA1_5683999139",
+          "endedAt": 1795286046284,
+          "durationSec": 2588,
+          "champion": "Graves",
+          "win": true,
+          "kills": 5,
+          "deaths": 6,
+          "assists": 16
+        },
+        {
+          "id": "NA1_5683993757",
+          "endedAt": 1795283177664,
+          "durationSec": 1977,
+          "champion": "Graves",
+          "win": false,
+          "kills": 8,
+          "deaths": 3,
+          "assists": 2
+        }
+      ]
+    },
+    "amongusly": {
+      "gameName": "Amongusly",
+      "tagLine": "111",
+      "level": 192,
+      "profileIconId": 907,
+      "solo": {
+        "tier": "DIAMOND",
+        "rank": "IV",
+        "lp": 0,
+        "wins": 171,
+        "losses": 170,
+        "hotStreak": false
+      },
+      "recent": []
+    }
+  }
+}

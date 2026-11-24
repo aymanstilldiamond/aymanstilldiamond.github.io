@@ -1,0 +1,68 @@
+name: Refresh rank and deploy
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Every 30 minutes. GitHub may run scheduled jobs a little late.
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write # commit rank.json when it changes
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Fetch live rank from Riot
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+        run: node scripts/fetch-rank.mjs
+
+      # Committing only when the data changed keeps a rank history in git and
+      # keeps the repo active so GitHub doesn't pause the schedule. Pushes made
+      # with GITHUB_TOKEN don't trigger this workflow again.
+      - name: Commit rank.json if it changed
+        run: |
+          git add public/data/rank.json
+          if git diff --cached --quiet; then
+            echo "Rank unchanged."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update rank snapshot"
+            git pull --rebase --quiet origin main && git push || echo "Push skipped; deploying anyway."
+          fi
+
+      - run: npm run build
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
