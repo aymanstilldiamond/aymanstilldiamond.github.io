@@ -1,70 +1,70 @@
 {
-  "fetchedAt": "2026-11-24T06:08:28.925Z",
+  "fetchedAt": "2026-11-25T23:19:08.749Z",
   "ddragonVersion": "16.23.1",
   "players": {
     "ayman": {
       "gameName": "Feymanxop",
       "tagLine": "NA2",
-      "level": 319,
+      "level": 320,
       "profileIconId": 6792,
       "solo": {
-        "tier": "EMERALD",
-        "rank": "I",
-        "lp": 25,
-        "wins": 287,
-        "losses": 269,
+        "tier": "DIAMOND",
+        "rank": "IV",
+        "lp": 1,
+        "wins": 292,
+        "losses": 270,
         "hotStreak": false
       },
       "recent": [
         {
-          "id": "NA1_5685514901",
-          "endedAt": 1795488600661,
-          "durationSec": 2569,
-          "champion": "Graves",
-          "win": false,
-          "kills": 2,
-          "deaths": 6,
-          "assists": 12
-        },
-        {
-          "id": "NA1_5685481668",
-          "endedAt": 1795485704944,
-          "durationSec": 1384,
-          "champion": "Shyvana",
-          "win": false,
-          "kills": 3,
-          "deaths": 4,
-          "assists": 1
-        },
-        {
-          "id": "NA1_5685357135",
-          "endedAt": 1795470907918,
-          "durationSec": 1720,
-          "champion": "Graves",
+          "id": "NA1_5686487928",
+          "endedAt": 1795643309521,
+          "durationSec": 1836,
+          "champion": "Yone",
           "win": true,
-          "kills": 3,
-          "deaths": 4,
-          "assists": 9
+          "kills": 10,
+          "deaths": 2,
+          "assists": 5
         },
         {
-          "id": "NA1_5684101007",
-          "endedAt": 1795299923150,
-          "durationSec": 3211,
-          "champion": "Graves",
-          "win": false,
-          "kills": 14,
-          "deaths": 6,
-          "assists": 23
-        },
-        {
-          "id": "NA1_5683999139",
-          "endedAt": 1795286046284,
-          "durationSec": 2588,
-          "champion": "Graves",
+          "id": "NA1_5686467135",
+          "endedAt": 1795640957223,
+          "durationSec": 2255,
+          "champion": "Yone",
           "win": true,
+          "kills": 8,
+          "deaths": 8,
+          "assists": 6
+        },
+        {
+          "id": "NA1_5686443540",
+          "endedAt": 1795638477611,
+          "durationSec": 2107,
+          "champion": "Jax",
+          "win": false,
           "kills": 5,
-          "deaths": 6,
-          "assists": 16
+          "deaths": 7,
+          "assists": 7
+        },
+        {
+          "id": "NA1_5686439171",
+          "endedAt": 1795636018674,
+          "durationSec": 1668,
+          "champion": "Jax",
+          "win": true,
+          "kills": 4,
+          "deaths": 4,
+          "assists": 5
+        },
+        {
+          "id": "NA1_5686420524",
+          "endedAt": 1795633568931,
+          "durationSec": 1697,
+          "champion": "Yone",
+          "win": true,
+          "kills": 7,
+          "deaths": 3,
+          "assists": 7
         }
       ]
     },
