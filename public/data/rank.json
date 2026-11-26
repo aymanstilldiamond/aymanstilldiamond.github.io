@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-25T23:19:08.749Z",
+  "fetchedAt": "2026-11-26T05:28:57.528Z",
   "ddragonVersion": "16.23.1",
   "players": {
     "ayman": {
@@ -10,12 +10,32 @@
       "solo": {
         "tier": "DIAMOND",
         "rank": "IV",
-        "lp": 1,
+        "lp": 0,
         "wins": 292,
-        "losses": 270,
+        "losses": 272,
         "hotStreak": false
       },
       "recent": [
+        {
+          "id": "NA1_5686667584",
+          "endedAt": 1795662643529,
+          "durationSec": 928,
+          "champion": "Jax",
+          "win": false,
+          "kills": 1,
+          "deaths": 4,
+          "assists": 3
+        },
+        {
+          "id": "NA1_5686653821",
+          "endedAt": 1795661360879,
+          "durationSec": 1586,
+          "champion": "Jax",
+          "win": false,
+          "kills": 1,
+          "deaths": 6,
+          "assists": 0
+        },
         {
           "id": "NA1_5686487928",
           "endedAt": 1795643309521,
@@ -44,26 +64,6 @@
           "win": false,
           "kills": 5,
           "deaths": 7,
-          "assists": 7
-        },
-        {
-          "id": "NA1_5686439171",
-          "endedAt": 1795636018674,
-          "durationSec": 1668,
-          "champion": "Jax",
-          "win": true,
-          "kills": 4,
-          "deaths": 4,
-          "assists": 5
-        },
-        {
-          "id": "NA1_5686420524",
-          "endedAt": 1795633568931,
-          "durationSec": 1697,
-          "champion": "Yone",
-          "win": true,
-          "kills": 7,
-          "deaths": 3,
           "assists": 7
         }
       ]
